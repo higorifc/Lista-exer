@@ -1,5 +1,22 @@
+<meta charset="UTF-8">
 <script>
-    const num1 = Number(prompt(`Informe um número inteiro`))
-    const num2 = Number(prompt(`Informe um número inteiro`))
-    const num3 = Number(prompt(`Informe um número inteiro`))
-</script>
+const nota1 = Number(prompt(`Informe sua primeira nota`));
+const nota2 = Number(prompt(`Informe sua segunda nota`));
+const nota3 = Number(prompt(`Informe sua terçeira nota`));
+const medExe = Number(prompt(`Informe sua média de exercícios`));
+
+let resultado = (nota1 + nota2 * 2 + nota3 * 3 + medExe) / 7;
+
+if( resultado >= 9 ){
+    alert(`Conceito A`)
+}
+else if( resultado >= 7,5 &&  resultado < 9){
+    alert(`Conceito B`)
+}
+else if ( resultado >= 6 && resultado < 7,5){
+    alert(`Conceito C`)
+}
+else{
+    alert(`Conceito D`)
+};
+</script> 
