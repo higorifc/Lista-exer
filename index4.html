@@ -6,11 +6,18 @@
     */
 
     //ENTRADA
+     const lb = Number(prompt(`Informe sua nota antes de receber ajuda`));
+     const lbf = Number(prompt(`Informe sua nota após a ajuda`));
 
     
     //PROCESSAMENTO
-    
-    
+    if(lb < lbf){
+        const aumento = (lbf - lb ) / 1/4;
+        alert(`nota do bigBrother aumentou ${aumento.toFixed(2).replace("." , ",")}`)
+    } 
+    else{
+        alert(`não aumento pois os rsultados não foram positivos`)
+    };
     //SAÍDA
 
 </script>
