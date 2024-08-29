@@ -10,10 +10,18 @@
     */
 
     //ENTRADA
-    
+    const cao = prompt(`Informe o porte de seu cão, use somente: "pequeno" , "médio" ou "grande"`);
     
     //PROCESSAMENTO
-
+    if (cao == "pequeno" || cao == "Pequeno") {
+        alert(`Fator 5`)
+    } else if (cao == "médio" || cao == "Médio") {
+        alert(`Fator 6`)
+    } else if (cao == "grande" || cao == "Grande") {
+        alert(`Fator 7`)
+    } else {
+        alert(`Porte do cão inválido! Use "pequeno", "médio" ou "grande".`);
+    }
     
     //SAÍDA
 

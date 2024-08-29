@@ -10,10 +10,25 @@
     */
 
     //ENTRADA
+    const preco = Number(prompt(`Indique o preço do produto:`));
+    let resultado = 0;
 
-    
     //PROCESSAMENTO
-
+    if (preco <= 280){
+       resultado = preco + ( preco * 0.20);
+       alert(`O preço teve um aumento de 20%, portanto seu produto está custando R$ ${resultado.toFixed(2).replace("." , ",")}`);
+    } else if (preco <= 700 || preco > 280) {
+        resultado = preco + ( preco * 0.15);
+        alert(`O preço teve um aumento de 15%, portanto seu produto está custando R$ ${resultado.toFixed(2).replace("." , ",")}`);
+    } else if (preco <= 1500 || preco > 700) {
+        resultado = preco + ( preco * 0.10);
+        alert(`O preço teve um aumento de 10%, portanto seu produto está custando R$ ${resultado.toFixed(2).replace("." , ",")}`);
+    } else if (preco > 1500) {
+        resultado = preco + ( preco * 0.5);
+        alert(`O preço teve um aumento de 5%, portanto seu produto está custando R$ ${resultado.toFixed(2).replace("." , ",")}`);
+    } else {
+        alert(`Dados inválidos`)
+    };
     
     //SAÍDA
 
