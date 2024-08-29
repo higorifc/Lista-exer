@@ -14,9 +14,30 @@
     */
 
     //ENTRADA
-
-
+    const combustivel = prompt(`Informe o tipo de combustível (Digite para A-álcool ou para G-gasolina)`);
+    const litros = Number(prompt(`Informe quantos litros foram vendidos`));
+    let preco = 0;
     //PROCESSAMENTO
+
+    if (combustivel == "A" || combustivel == "a"){
+        if(litros <= 20 ){
+            preco = litros - (6.10 * 0.03);
+            alert(`O preço do litro do Álcool é R$ ${preco.toFixed(2).replace("," , ".")} com o desconto`)
+        } else {
+            preco = litros - (6.10 * 0.06);
+            alert(`O preço do litro do Álcool é R$ ${preco.toFixed(2).replace("," , ".")} com o desconto`)    
+        };
+    } else if (combustivel = "g" || combustivel || "G"){
+        if(litros <= 20 ){
+            preco = litros - (6.50 * 0.04)
+            alert(`O preço do litro da Gasolina é R$ ${preco.toFixed(2).replace("," , ".")} com o desconto`)
+        } else {
+            preco = litros - (6.50 * 0.06)
+            alert(`O preço do litro da Gasolina é R$ ${preco.toFixed(2).replace("," , ".")} com o desconto`)
+        }
+    } else {
+        alert(`Dados Inválidos`)
+    }
 
     
     //SAÍDA

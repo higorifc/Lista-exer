@@ -1,0 +1,41 @@
+<meta charset="UTF-8" />
+<script>
+    /*
+    PROBLEMA: NOTA PARA CONCEITO
+    Converta a nota para conceito, conforme a tabela abaixo:
+    Nota                     Conceito
+    Entre 10.0 e 9.0            A
+    Entre 8.9 e 8.0             B
+    Entre 7.9 e 7.0             C
+    Entre 6.9 e 6.0             D
+    Entre 5.9 e zero            E
+    */
+
+    //ENTRADA
+    const nota = Number(prompt("Qual sua nota?"));
+    
+    //PROCESSAMENTO
+    if(nota == 10.0 || nota >= 9.0){
+        alert(`Conceito A`)
+
+    } else if (nota == 8.9 || nota >= 8.0){
+        alert(`Conceito B`)
+
+    } else if (nota == 7.9 || nota >= 7.0){
+        alert(`Conceito C`)
+
+    } else if (nota == 6.9 || nota >= 6.0){
+        alert(`Conceito D`)         
+
+    } else if (nota == 5.9 || nota >= 0){
+        alert(`Conceito E `)
+
+    }
+    else{
+        alert(`Dado inválido `)
+
+    };
+    
+    //SAÍDA
+
+</script>
